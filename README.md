@@ -164,6 +164,116 @@ Dynamic forms rendered based on the XML input, showcasing text inputs, radio but
   <img src="Custom form.jpeg" alt="Custom Form" width="300">
 </div>
 
+## 📝 Sample XML Inputs
+
+Below are some complex XML structures to test the functionality of the application:
+
+---
+
+### **Form 1: Employee Details and Preferences**
+
+```xml
+<div>
+  <g id="textGroup1" fdtType="iso" fdtFieldName="Employee Name">
+    <rect x="50" y="50" width="20" height="30" />
+    <rect x="70" y="50" width="20" height="30" />
+    <rect x="90" y="50" width="20" height="30" />
+    <rect x="110" y="50" width="20" height="30" />
+    <rect x="130" y="50" width="20" height="30" />
+    <rect x="150" y="50" width="20" height="30" />
+    <rect x="170" y="50" width="20" height="30" />
+    <rect x="190" y="50" width="20" height="30" />
+    <rect x="210" y="50" width="20" height="30" />
+    <rect x="230" y="50" width="20" height="30" />
+  </g>
+
+  <g id="dateGroup1" fdtType="date" fdtFieldName="Date of Joining">
+    <rect x="50" y="100" width="20" height="30" />
+    <rect x="70" y="100" width="20" height="30" />
+    <rect x="110" y="100" width="20" height="30" />
+    <rect x="130" y="100" width="20" height="30" />
+    <rect x="170" y="100" width="20" height="30" />
+    <rect x="190" y="100" width="20" height="30" />
+    <rect x="210" y="100" width="20" height="30" />
+    <rect x="230" y="100" width="20" height="30" />
+  </g>
+
+  <g id="radioGroup1" fdtType="radioList" fdtFieldName="Preferred Department">
+    <rect id="option1" x="50" y="150" width="20" height="20" />
+    <text id="label1" x="80" y="160">HR</text>
+    <rect id="option2" x="50" y="180" width="20" height="20" />
+    <text id="label2" x="80" y="190">Finance</text>
+    <rect id="option3" x="50" y="210" width="20" height="20" />
+    <text id="label3" x="80" y="220">Engineering</text>
+    <rect id="option4" x="50" y="240" width="20" height="20" />
+    <text id="label4" x="80" y="250">Marketing</text>
+  </g>
+
+  <g id="signatureField1" fdtType="cursiveSignature" fdtFieldName="Employee Signature"></g>
+</div>
+```
+
+
+```
+<div>
+
+  <g id="textGroup1" fdtType="iso" fdtFieldName="Full Name">
+    <rect x="50" y="50" width="20" height="30" />
+    <rect x="70" y="50" width="20" height="30" />
+    <rect x="90" y="50" width="20" height="30" />
+    <rect x="110" y="50" width="20" height="30" />
+    <rect x="130" y="50" width="20" height="30" />
+    <rect x="150" y="50" width="20" height="30" />
+    <rect x="170" y="50" width="20" height="30" />
+    <rect x="190" y="50" width="20" height="30" />
+    <rect x="210" y="50" width="20" height="30" />
+    <rect x="230" y="50" width="20" height="30" />
+  </g>
+
+  <g id="dateGroup1" fdtType="date" fdtFieldName="Date of Birth">
+    <rect x="50" y="100" width="20" height="30" />
+    <rect x="70" y="100" width="20" height="30" />
+    <rect x="110" y="100" width="20" height="30" />
+    <rect x="130" y="100" width="20" height="30" />
+    <rect x="170" y="100" width="20" height="30" />
+    <rect x="190" y="100" width="20" height="30" />
+    <rect x="210" y="100" width="20" height="30" />
+    <rect x="230" y="100" width="20" height="30" />
+  </g>
+
+
+  <g id="radioGroup1" fdtType="radioList" fdtFieldName="Satisfaction Level">
+    <rect id="option1" x="50" y="150" width="20" height="20" />
+    <text id="label1" x="80" y="160">Very Satisfied</text>
+    <rect id="option2" x="50" y="180" width="20" height="20" />
+    <text id="label2" x="80" y="190">Satisfied</text>
+    <rect id="option3" x="50" y="210" width="20" height="20" />
+    <text id="label3" x="80" y="220">Neutral</text>
+    <rect id="option4" x="50" y="240" width="20" height="20" />
+    <text id="label4" x="80" y="250">Dissatisfied</text>
+    <rect id="option5" x="50" y="270" width="20" height="20" />
+    <text id="label5" x="80" y="280">Very Dissatisfied</text>
+  </g>
+
+
+  <g id="textGroup2" fdtType="iso" fdtFieldName="Email">
+    <rect x="50" y="320" width="20" height="30" />
+    <rect x="70" y="320" width="20" height="30" />
+    <rect x="90" y="320" width="20" height="30" />
+    <rect x="110" y="320" width="20" height="30" />
+    <rect x="130" y="320" width="20" height="30" />
+    <rect x="150" y="320" width="20" height="30" />
+    <rect x="170" y="320" width="20" height="30" />
+    <rect x="190" y="320" width="20" height="30" />
+    <rect x="210" y="320" width="20" height="30" />
+    <rect x="230" y="320" width="20" height="30" />
+  </g>
+
+  <g id="signatureField1" fdtType="cursiveSignature" fdtFieldName="Survey Taker Signature"></g>
+</div>
+```
+
+
 ## 🎥 Demo Video
 
 Watch the full demonstration of the app functionality: 
