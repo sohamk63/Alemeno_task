@@ -145,29 +145,24 @@ Once the XML is provided, click **"Create XML Form"** to generate the form.
 
 ## 📸 Screenshots
 
-1. **Home Page**  
-   A clean interface allowing users to either upload XML files or input XML content directly.
-| Image                                                                                                   |
-|---------------------------------------------------------------------------------------------------------|
-| <img src="Home Page.jpg" alt="Home Page" width="300">                                                   |
+# Screenshots
+
+## 1. Home Page
+A clean interface allowing users to either upload XML files or input XML content directly.
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="Home Page.jpg" alt="Home Page" width="300">
+</div>
 
 ---
 
-### 2. Generated Form
+## 2. Generated Form
 Dynamic forms rendered based on the XML input, showcasing text inputs, radio buttons, and more.
 
-| Image                                                                                                   |
-|---------------------------------------------------------------------------------------------------------|
-| <img src="Provided form.jpeg" alt="Generated Form" width="300">                                         |
-| <img src="Custom form.jpeg" alt="Home page" width="180" height="300">
-
-
-3. **Generated Form**  
-   Dynamic forms rendered based on the XML input, showcasing text inputs, radio buttons, and more!
-   <img src="Provided form.jpeg" alt="Provided form" width="180" height="300">
-   <img src="Custom form.jpeg" alt="Custom Form" width="180" height="300">
-
----
+<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+  <img src="Provided form.jpeg" alt="Generated Form" width="300">
+  <img src="Custom form.jpeg" alt="Custom Form" width="180" height="300">
+</div>
 
 ## 🎥 Demo Video
 
