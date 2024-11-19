@@ -166,7 +166,9 @@ Dynamic forms rendered based on the XML input, showcasing text inputs, radio but
 
 ## 🎥 Demo Video
 
-Watch the full demonstration of the app functionality: [https://drive.google.com/file/d/19MDlJolYunBCdlIF_-tb6nGHd9ZVn9xx/view?usp=drive_link](#).
+Watch the full demonstration of the app functionality: 
+<iframe src="https://drive.google.com/file/d/19MDlJolYunBCdlIF_-tb6nGHd9ZVn9xx/preview" width="640" height="480"></iframe>
+
 
 ---
 
@@ -176,4 +178,3 @@ Watch the full demonstration of the app functionality: [https://drive.google.com
 2. Improve the UI/UX design with animations.
 3. Add validation features for required fields.
 
-```
