@@ -147,7 +147,8 @@ Once the XML is provided, click **"Create XML Form"** to generate the form.
 
 1. **Home Page**  
    A clean interface allowing users to either upload XML files or input XML content directly.
-   ![28b37fc6-9ffb-448f-b309-574c68a5c61f](https://github.com/user-attachments/assets/7402e2cf-9501-478a-b7e2-b502cd245d95)
+   <img src="Home Page.jpg" alt="Description" width="500" height="300">
+
 
 3. **Generated Form**  
    Dynamic forms rendered based on the XML input, showcasing text inputs, radio buttons, and more!
@@ -156,7 +157,7 @@ Once the XML is provided, click **"Create XML Form"** to generate the form.
 
 ## 🎥 Demo Video
 
-Watch the full demonstration of the app functionality: [Demo Video Link](#).
+Watch the full demonstration of the app functionality: [https://drive.google.com/file/d/19MDlJolYunBCdlIF_-tb6nGHd9ZVn9xx/view?usp=drive_link](#).
 
 ---
 
