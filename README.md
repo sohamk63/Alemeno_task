@@ -152,8 +152,8 @@ Once the XML is provided, click **"Create XML Form"** to generate the form.
 
 3. **Generated Form**  
    Dynamic forms rendered based on the XML input, showcasing text inputs, radio buttons, and more!
-   <img src="Provided form.jpg" alt="Provided form" width="180" height="300">
-   <img src="Custom Form.jpg" alt="Custom Form" width="180" height="300">
+   <img src="Provided form.jpeg" alt="Provided form" width="180" height="300">
+   <img src="Custom Form.jpeg" alt="Custom Form" width="180" height="300">
 
 ---
 
