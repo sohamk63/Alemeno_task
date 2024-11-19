@@ -147,7 +147,7 @@ Once the XML is provided, click **"Create XML Form"** to generate the form.
 
 1. **Home Page**  
    A clean interface allowing users to either upload XML files or input XML content directly.
-   <img src="Home Page.jpg" alt="Description" width="500" height="300">
+   <img src="Home Page.jpg" alt="Description" width="100" height="200">
 
 
 3. **Generated Form**  
