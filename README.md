@@ -1,6 +1,4 @@
-Here’s a **clean and concise markdown** for your README:
 
-```markdown
 # ✨ XML to React Native Form Generator ✨
 
 🚀 **Dynamically convert XML input into fully interactive React Native forms!**  
