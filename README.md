@@ -159,9 +159,9 @@ A clean interface allowing users to either upload XML files or input XML content
 ## 2. Generated Form
 Dynamic forms rendered based on the XML input, showcasing text inputs, radio buttons, and more.
 
-<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 40px;">
   <img src="Provided form.jpeg" alt="Generated Form" width="300">
-  <img src="Custom form.jpeg" alt="Custom Form" width="180" height="300">
+  <img src="Custom form.jpeg" alt="Custom Form" width="300">
 </div>
 
 ## 🎥 Demo Video
