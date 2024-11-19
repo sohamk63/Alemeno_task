@@ -139,7 +139,7 @@ Once the XML is provided, click **"Create XML Form"** to generate the form.
 
 - **`expo-document-picker`**: For file selection.
 - **`react-native-xml2js`**: For parsing XML to JSON.
-- **`react-native-draw`**: For the signature field canvas.
+- **`react-native-signature-canvas`**: For the signature field canvas.
 
 ---
 
