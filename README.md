@@ -167,7 +167,8 @@ Dynamic forms rendered based on the XML input, showcasing text inputs, radio but
 ## 🎥 Demo Video
 
 Watch the full demonstration of the app functionality: 
-<iframe src="https://drive.google.com/file/d/19MDlJolYunBCdlIF_-tb6nGHd9ZVn9xx/preview" width="640" height="480"></iframe>
+(https://drive.google.com/file/d/19MDlJolYunBCdlIF_-tb6nGHd9ZVn9xx/view?usp=drive_link)
+
 
 
 ---
