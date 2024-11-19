@@ -35,7 +35,7 @@ This project takes an XML structure, parses it, and creates forms on the fly wit
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/XMLFormGenerator.git
+   https://github.com/sohamk63/Alemeno_task.git
    ```
 
 2. Navigate to the project folder:
