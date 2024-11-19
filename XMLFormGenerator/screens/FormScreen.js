@@ -82,6 +82,7 @@ const FormScreen = ({ route }) => {
           label: node.$.fdtFieldName || "",
           rects: rectsWithLabels,
         });
+
       }
     }
   
@@ -99,7 +100,7 @@ const FormScreen = ({ route }) => {
         }
       });
     }
-  
+    console.log(fields);
     return fields;
   };
   
@@ -190,7 +191,7 @@ const FormScreen = ({ route }) => {
                         maxLength={1}
                         keyboardType="numeric"
                         placeholder={placeholder}
-                        placeholderTextColor="red"
+                        placeholderTextColor="grey"
                         style={{
                           width: parseFloat(rect.width) || 25,
                           height: parseFloat(rect.height) || 30,
@@ -227,54 +228,66 @@ const FormScreen = ({ route }) => {
             </View>
           );
 
-        case "radioList":
-          return (
-            <View key={field.id} style={{ marginVertical: 10 }}>
-              <Text style={{ marginBottom: 5, fontWeight: "bold" }}>
-                {field.label}
-              </Text>
-              {field.rects.map((rect, index) => (
-                <TouchableOpacity
-                  key={`${field.id}-option-${index}`}
-                  style={{
-                    flexDirection: "row",
-                    alignItems: "center",
-                    marginBottom: 5,
-                  }}
-                  onPress={() => {
-                    // Update selected option
-                    setFormFields((prevFields) =>
-                      prevFields.map((f) =>
-                        f.id === field.id
-                          ? {
-                              ...f,
-                              selectedOption: rect.label || `Option ${index + 1}`,
-                            }
-                          : f
-                      )
-                    );
-                  }}
-                >
-                  <View
-                    style={{
-                      width: rect.width,
-                      height: rect.height,
-                      borderWidth: 1,
-                      borderRadius: rect.width / 2, // Make it circular if it's a radio button
-                      marginRight: 10,
-                      backgroundColor:
-                        field.selectedOption === (rect.label || `Option ${index + 1}`)
-                          ? "blue"
-                          : "white",
-                    }}
-                  />
-                  <Text style={{ fontSize: 14 }}>
-                    {rect.label || `Option ${index + 1}`}
-                  </Text>
-                </TouchableOpacity>
-              ))}
-            </View>
-          );
+          case "radioList":
+            return (
+              <View key={field.id} style={{ marginVertical: 10 }}>
+                <Text style={{ marginBottom: 5, fontWeight: "bold" }}>
+                  {field.label}
+                </Text>
+                {field.rects.map((rect, index) => {
+                  // Find a matching label from associatedText based on rect position or ID
+                  const associatedLabel = field.associatedText?.find(
+                    (text) =>
+                      Math.abs(parseInt(text.x, 10) - parseInt(rect.x, 10)) < 50 &&
+                      Math.abs(parseInt(text.y, 10) - parseInt(rect.y, 10)) < 50
+                  );
+          
+                  return (
+                    <TouchableOpacity
+                      key={`${field.id}-option-${index}`}
+                      style={{
+                        flexDirection: "row",
+                        alignItems: "center",
+                        marginBottom: 5,
+                      }}
+                      
+                      onPress={() => {
+                        // Update selected option
+                        setFormFields((prevFields) =>
+                          prevFields.map((f) =>
+                            f.id === field.id
+                              ? {
+                                  ...f,
+                                  selectedOption: associatedLabel?.value || rect.label || `Option ${index + 1}`,
+                                }
+                              : f
+                          )
+                        );
+                      }}
+                    >
+                      <View
+                        style={{
+                          width: rect.width,
+                          height: rect.height,
+                          borderWidth: 1,
+                          borderRadius: rect.width / 2, // Make it circular if it's a radio button
+                          marginRight: 10,
+                          backgroundColor:
+                            field.selectedOption ===
+                            (associatedLabel?.value || rect.label || `Option ${index + 1}`)
+                              ? "blue"
+                              : "white",
+                        }}
+                      />
+                      <Text style={{ fontSize: 14 }}>
+                        {associatedLabel?.value || rect.label || `Option ${index + 1}`}
+                      </Text>
+                    </TouchableOpacity>
+                  );
+                })}
+              </View>
+            );
+          
 
         case "cursiveSignature":
           return (

@@ -36,7 +36,7 @@ const HomeScreen = ({ navigation }) => {
       const fileContent = await FileSystem.readAsStringAsync(fileUri);
 
       setXmlContent(fileContent);
-      setSelectedFileName(result.name); // Display file name
+      setSelectedFileName(result.assets[0].name); // Display file name
       Alert.alert("Document Loaded", "Click 'Create XML Form' to proceed.");
     } catch (error) {
       console.error("Error reading file:", error);
@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
     lineHeight: 22,
   },
   inputButton: {
-    backgroundColor: "#F2F2F2", // Light gray for Apple's button style
+    backgroundColor: "#D6D6D6", // Light gray for Apple's button style
     paddingVertical: 12,
     paddingHorizontal: 20,
     borderRadius: 14,
